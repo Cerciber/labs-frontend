@@ -4,6 +4,7 @@ import SignUp from "./views/SignUp";
 import Login from "./views/Login";
 import Home from "./views/Home";
 import AddRole from "./components/AddRole";
+import Roles from "./components/Roles";
 
 Vue.use(Router);
 
@@ -28,8 +29,13 @@ export default new Router({
       children: [
         {
           path: "nuevo-rol",
-          name: "add-role",
+          name: "add-role", 
           component: AddRole
+        },
+        {
+          path: "roles",
+          name: "roles",
+          component: Roles
         }
       ]
     }
